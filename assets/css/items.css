@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.button{
+    cursor: pointer;
+    padding: 3px 5px;
+}
+.pc-box h2{
+    text-align: center;
+    margin: 15px 0;
+}
+.pe-box h2{
+    text-align: center;
+    margin: 15px 0;
+}
+.each-category{
+    justify-content: center;
+}
+.each-category-box_pc{
+    width: 50%;
+    padding: 10px;
+}
+.each-category-box_pc.pc-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-wrap_pc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-wrap_pc img{
+    max-width: 100%;
+}
+.item-heading{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-table{
+    width: 100%;
+}
+.item-table th, td{
+    padding: 10px;
+}
+.item-table th{
+    background-color: #cccccc;
+/*    color: #fff;*/
+}
+.item-table td{
+    background-color: #e9eced;
+}
+.price-box{
+    padding: 5px;
+}
+.price-num{
+    display: none;
+}
+.new-price-num{
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
+.yen{
+    font-weight: bold;
+    color: red;
+    padding-left: 10px;
+}
+.select-box{
+    margin: 5px 0;
+}
+.cart-select{
+    padding: 5px;
+}
+.cart-btn, .confirm-btn{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cart-btn{
+    background-color: rgba(161,236,255,0.5);
+}
+.shopping-box{
+    width: 90%;
+    margin: 0 auto;
+}
+.shopping-box h3::before{
+    content: "商品名：";
+}
+.item-number::before{
+    content: "数量：";
+}
+.price::before{
+    content: "単価：";
+}
+.price::after{
+    padding-left: 5px;
+    font-size: 0.8em;
+    content: "円";
+}
+.total-price::before{
+    content: "合計：";
+}
+.total-price::after{
+    padding-left: 5px;
+    font-size: 0.8em;
+    content: "円";
+}
+.delete-btn{
+    margin: 5px 0;
+}
+.items-total-number{
+    padding: 5px 0;
+    font-size: 1.5em;
+}
+.items-total-number::before{
+    content: "商品の合計数：";
+    font-size: 0.7em;
+}
+.js-total{
+    font-size: 2em;
+}
+.js-total::before{
+    font-size: 0.7em;
+    content: "合計金額：";
+}
+.js-total::after{
+    font-size: 0.7em;
+    content: "円";
+    padding-left: 5px;
+}
+.shopping-list{
+    border-top: 1px solid #555555;
+    padding: 5px 0;
+}
+.shopping-list:last-child{
+    border-bottom: 1px solid #555555;
+}
+.parchase-box{
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 620px){
+    .each-category-box_pc{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .item-heading{
+        height: auto;
+    }
+    .price-box{
+        text-align: center;
+    }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="この店舗は存在しません。">
+<title>Butterfly PC / EVENTS</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/events.css">
+</head>
+
+<body>
+
+<div class="drawer-screen"></div>
+    
+<header>
+    
+    <div class="top-menu">
+        <nav class="top-menu-nav">
+            <ul class="top-menu-ul">
+                
+                <li class="top-menu-list">
+                    <div class="logo-box">
+                            <a href="index.html">
+                                <img src="assets/image/logo3.png" alt="蝶の画像">
+                            </a>
+                    </div>  
+                </li>            
+                <li class="top-menu-list">
+                    <a href="items.html">
+                        商品情報<br>
+                        <span class="en-menu">ITEMS</span>
+                    </a>
+                    <ul class="item-drop-menu drop-menu">
+                        <li><a href="items.html#pc">パソコン本体</a></li>
+                        <li><a href="items.html#pe">周辺機器</a></li>
+                    </ul>
+                </li>
+                <li class="top-menu-list">
+                    <a href="events.html">イベント<br>
+                        <span class="en-menu">EVENTS</span>
+                    </a>
+                    <ul class="events-drop-menu drop-menu">
+                        <li><a href="events.html#sale">タイムセール</a></li>
+                        <li><a href="events.html#competition">催し物</a></li>
+                    </ul>
+                </li>
+                <li class="top-menu-list">
+                    <a href="shop.html">店舗情報<br>
+                        <span class="en-menu">SHOP</span>
+                    </a>
+                </li>
+                <li class="top-menu-list">
+                    <a href="support.html">サポート<br>
+                        <span class="en-menu">SUPPORT</span>
+                    </a>
+                </li>
+                <li class="top-menu-list">
+                    <a href="confirm.html">カート<br>
+                        <span id="cart-number" class="en-menu"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+        <!--カートアイコン-->
+    <div class="cart-icon-box">
+        <a href="confirm.html">
+            <div id="cart-icon-number" class="cart-icon-number"></div>
+            <img src="assets/image/%E3%82%AB%E3%83%BC%E3%83%88%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.png" alt="カートのアイコン">
+        </a>
+    </div>
+    
+        <!-- ハンバーガーメニュー関連-->
+    <button type="button" class="drawer-btn">
+        <span class="inner-line"></span>
+    </button>
+    
+    <nav class="drawer-nav">
+        <h2 class="drawer-heading2">MENU</h2>
+        <ul class="drawer-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="items.html">商品情報</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="shop.html">店舗情報</a></li>
+            <li><a href="support.html">サポート</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    
+<div class="main">
+    
+    <div class="main-image">
+        <div class="title-box">
+            <h1>イベント</h1>
+        </div>
+    </div>
+    
+    <nav class="breadcrumb">
+        <ul class="breadcrumb-ul">
+            <li><a href="index.html">Home</a></li>
+            <li>イベント</li>
+        </ul>
+    </nav>
+
+    <section class="introduction each-section">
+        <div class="introduction-box">
+            <h2>イベントについてのご案内</h2>
+            <p>当店では毎日タイムセールを実施しております。割引対象商品は無作為に選ばれます。対象商品の在庫がなくなり次第終了となります。</p>
+            <p>また、月に一度店内で催し物が行われます。どなたでも無料でご参加できます。</p>
+        </div>
+    </section>
+    
+    <section class="sale each-section" id="sale">
+        <div class="sale-box">
+            <h2>タイムセール</h2>
+            <div class="sale-items">
+                <div class="sale-items-wrap">
+                    <div class="sale-items-image">
+                        <img id="sale-items-image1" src="assets/image/computer_memory.png" alt="メモリーの画像">
+                    </div>
+                    <div class="sale-items-text">
+                        <h3 id="sale-items-name1" class="sale-items-name">商品名</h3>
+                        <h4><span id="discount-number1" class="discount-number1">X</span><span class="discount-per">%</span>OFF!</h4>
+                        <div><s><span id="origin-price1" class="origin-price"></span></s><span class="yen">円</span></div>
+                        <div><span id="discount-price1" class="discount-price"></span><span class="yen">円</span></div>
+                        <p>セール終了まで</p>
+                        <div class="timer">タイマー１</div>
+                    </div>
+                </div>
+                <div class="sale-items-wrap">
+                    <div class="sale-items-image">
+                        <img id="sale-items-image2" src="assets/image/computer_keyboard_black.png" alt="キーボードの画像">
+                    </div>
+                    <div class="sale-items-text">
+                        <h3 id="sale-items-name2" class="sale-items-name">商品名</h3>
+                        <h4><span id="discount-number2" class="discount-number2">X</span><span class="discount-per">%</span>OFF!</h4>
+                        <div><s><span id="origin-price2" class="origin-price"></span></s><span class="yen">円</span></div>
+                        <div><span id="discount-price2" class="discount-price"></span><span class="yen">円</span></div>
+                        <p>セール終了まで</p>
+                        <div class="timer">タイマー２</div>
+                    </div>    
+                </div>
+            </div>
+        
+        </div>
+  
+
+    </section>
+    
+    <section class="competition each-section" id="competition">
+        <div class="competition-box">
+            <h2>催し物</h2>
+            <div class="competition-items">
+                <div class="competition-items-wrap">
+                    <div class="competition-items-image">
+                        <img src="assets/image/aig-esports_7525003-xl_TP_V.webp" alt="メモリーの画像">
+                    </div>
+                    <div class="competition-items-text">
+                        <h3>今月のイベント名</h3>
+                        <h4>優勝景品：商品券<span class="prize">XXXX</span><span class="yen">円</span></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="toGame">
+                <p>上記のイベントで優勝するには、下記のゲームを容易にクリアできることが求められるでしょう。腕試しにぜひ挑戦してみて下さい。</p>
+                <div class="gamesBox">
+                    <a href="math_game.html">数当てゲーム</a>
+                    <a href="typing_game.html">タイピングゲーム</a>
+                </div>
+            </div>
+
+        </div>
+    
+    </section>
+
+    <!-- 現在時刻表示 -->
+    <div id="current-time"></div>
+    <!-- クッキー削除用ボタン-->
+    <div class="deleteBtn">
+        <button id="delete">Cookie 削除</button>
+    </div>
+
+</div>
+
+<footer class="footer-box">
+    
+    <div class="sns-logo">
+        <div class="sns-logo-text">
+            Official SNS
+        </div>
+        <ul class="sns-logo-ul">
+            <li class="facebook sns-logo-li">
+                <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/Facebook_Logo_Primary.png" alt="facebook">
+                </a>
+            </li>
+            <li class="x sns-logo-li">
+                <a href="https://twitter.com/?lang=ja" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/logo-black.png" alt="x">
+                </a>
+            </li>
+            <li class="instagram sns-logo-li">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/Instagram_Glyph_Gradient.png" alt="instagram">
+                </a>    
+            </li>
+            <li class="line sns-logo-li">
+                <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/LINE_Brand_icon.png" alt="line">
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="copyright">
+    Copyright &copy; 2024 Butterfly PC, All Rights Reserved.
+    </div>
+    
+    <!--　トップに戻るボタン  -->
+    <a id="to-top" href="#"></a>
+    
+</footer>
+
+<div class="cookie-box">
+    <div class="cookie-text-box">
+        <p>
+            ユーザーの利便性を向上させるため、当ウェブサイトはクッキーを使用します。このデータが販売されたり、マーケティングに使用されたりすることはありません。
+        </p>
+        <button class="accept-btn cookie-btn">受け入れる</button>
+        <button class="refuse-btn cookie-btn">拒否する</button>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/js.cookie.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/events.js"></script>
+</body>
+
+</html>

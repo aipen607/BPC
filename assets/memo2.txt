@@ -1,0 +1,27 @@
+
+
+        delete_btn.setAttribute('data-no',`${i}`);
+
+
+	delete_btn.onclick = function(){
+            delete items[this.dataset.no];
+            this.closest('.shopping-list').remove();
+            localStorage.setItem('items', JSON.stringify(items));
+
+        }
+
+
+	if(items[i] !== null){
+
+
+
+
+        delete_btn.onclick = function(){
+            items.splice(this.dataset.no,1);
+		//配列の中からクリックされたボタンのナンバーを使って１つ削除
+
+            this.closest('.shopping-list').remove();
+            localStorage.setItem('items', JSON.stringify(items));
+            location.reload()
+		//その場で再読み込み
+        }

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="この店舗は存在しません。">
+<title>Butterfly PC / EVENTS</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/events.css">
+</head>
+
+<body>
+
+<div class="drawer-screen"></div>
+    
+<header>
+    
+    <div class="top-menu">
+        <nav class="top-menu-nav">
+            <ul class="top-menu-ul">
+                
+                <li class="top-menu-list">
+                    <div class="logo-box">
+                            <a href="index.html">
+                                <img src="assets/image/logo3.png" alt="蝶の画像">
+                            </a>
+                    </div>  
+                </li>            
+                <li class="top-menu-list">
+                    <a href="items.html">
+                        商品情報<br>
+                        <span class="en-menu">ITEMS</span>
+                    </a>
+                    <ul class="item-drop-menu drop-menu">
+                        <li><a href="items.html#pc">パソコン本体</a></li>
+                        <li><a href="items.html#pe">周辺機器</a></li>
+                    </ul>
+                </li>
+                <li class="top-menu-list">
+                    <a href="events.html">イベント<br>
+                        <span class="en-menu">EVENTS</span>
+                    </a>
+                    <ul class="events-drop-menu drop-menu">
+                        <li><a href="events.html#sale">タイムセール</a></li>
+                        <li><a href="events.html#competition">催し物</a></li>
+                    </ul>
+                </li>
+                <li class="top-menu-list">
+                    <a href="shop.html">店舗情報<br>
+                        <span class="en-menu">SHOP</span>
+                    </a>
+                </li>
+                <li class="top-menu-list">
+                    <a href="support.html">サポート<br>
+                        <span class="en-menu">SUPPORT</span>
+                    </a>
+                </li>
+                <li class="top-menu-list">
+                    <a href="confirm.html">カート<br>
+                        <span id="cart-number" class="en-menu"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+        <!--カートアイコン-->
+    <div class="cart-icon-box">
+        <a href="confirm.html">
+            <div id="cart-icon-number" class="cart-icon-number"></div>
+            <img src="assets/image/%E3%82%AB%E3%83%BC%E3%83%88%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.png" alt="カートのアイコン">
+        </a>
+    </div>
+    
+        <!-- ハンバーガーメニュー関連-->
+    <button type="button" class="drawer-btn">
+        <span class="inner-line"></span>
+    </button>
+    
+    <nav class="drawer-nav">
+        <h2 class="drawer-heading2">MENU</h2>
+        <ul class="drawer-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="items.html">商品情報</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li><a href="shop.html">店舗情報</a></li>
+            <li><a href="support.html">サポート</a></li>
+        </ul>
+    </nav>
+    
+</header>
+    
+<div class="main">
+    
+    <div class="main-image">
+        <div class="title-box">
+            <h1>数当てゲーム</h1>
+        </div>
+    </div>
+    
+    <nav class="breadcrumb">
+        <ul class="breadcrumb-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">イベント</a></li>
+            <li>数当てゲーム</li>
+        </ul>
+    </nav>
+
+    <section class="introduction each-section math-game-section">
+        <div class="introduction-box">
+            <h2>数当てゲームに挑戦しよう！</h2>
+            <p>1～Xまでの数字がランダムに選ばれます。制限時間内かつ10回以内にその数字を当てましょう。もし外れたら、正解の数字がそれより大きいか小さいかが表示されます。それをヒントに正解にたどり着きましょう！</p>
+        </div>
+    </section>
+    
+    <section class="game each-section" id="game">
+        <div id="setNumber-box" class="setNumber-box">
+            <span>Xの値：1~</span><input id="user-setNumber" class="user-setNumber" type="number" value="1000">
+        </div>
+        <div id="setTime-box" class="setTime-box">
+            <span>制限時間：</span><input id="user-setTime" class="user-setTime" type="number" value="60"><span>秒</span>
+        </div>
+        <div id="timer-box" class="timer-box"></div>
+        <div id="elapsedTimer-box" class="elapsedTimer-box hidden"></div>
+        <div class="startBtn-box">
+            <button id="startBtn" class="startBtn">Game start!</button>
+        </div>
+        <form class="form hidden">
+           <label for="guessField">数字を入力してください</label>
+            <input type="number" id="guessField" class="guessField">
+            <input type="submit"  id="submit" value="送信" class="guessSubmit">
+        </form>
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="restGuesses"></p>
+            <p class="correctNumber"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+
+    </section>
+
+    <!-- 現在時刻表示 -->
+    <div id="current-time"></div>
+    <!-- クッキー削除用ボタン-->
+    <div class="deleteBtn">
+        <button id="delete">Cookie 削除</button>
+    </div>
+
+</div>
+
+<footer class="footer-box">
+    
+    <div class="sns-logo">
+        <div class="sns-logo-text">
+            Official SNS
+        </div>
+        <ul class="sns-logo-ul">
+            <li class="facebook sns-logo-li">
+                <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/Facebook_Logo_Primary.png" alt="facebook">
+                </a>
+            </li>
+            <li class="x sns-logo-li">
+                <a href="https://twitter.com/?lang=ja" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/logo-black.png" alt="x">
+                </a>
+            </li>
+            <li class="instagram sns-logo-li">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/Instagram_Glyph_Gradient.png" alt="instagram">
+                </a>    
+            </li>
+            <li class="line sns-logo-li">
+                <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/image/LINE_Brand_icon.png" alt="line">
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="copyright">
+    Copyright &copy; 2024 Butterfly PC, All Rights Reserved.
+    </div>
+    
+    <!--　トップに戻るボタン  -->
+    <a id="to-top" href="#"></a>
+    
+</footer>
+
+<div class="cookie-box">
+    <div class="cookie-text-box">
+        <p>
+            ユーザーの利便性を向上させるため、当ウェブサイトはクッキーを使用します。このデータが販売されたり、マーケティングに使用されたりすることはありません。
+        </p>
+        <button class="accept-btn cookie-btn">受け入れる</button>
+        <button class="refuse-btn cookie-btn">拒否する</button>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/js.cookie.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/math_game.js"></script>
+</body>
+
+</html>

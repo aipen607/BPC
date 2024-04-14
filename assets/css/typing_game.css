@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.title-box{
+    font-family: "Libre Baskerville", serif;
+}
+.typing{
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+}
+.setNumberBox, .setQuestionNumberBox{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.setQuestionTime, .setQuestionNumber{
+    width: 80px;
+    font-size: 1.2rem;
+}
+.Btn-box{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startBtn, .stopBtn{
+    font-size: 2rem;
+    padding: 0 5px;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+.startBtn{
+    background-color: lime;
+}
+.stopBtn{
+    background-color: red;
+}
+.typing-timer{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(0 151 0);
+}
+.container{
+    background-color: rgb(161,236,255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: 1px 5px 6px rgb(80,80,80);
+}
+.typeInput{
+    font-family: "Libre Baskerville", serif;
+    margin-top: 4rem;
+    background: transparent;
+    border: 2px solid rgb(158,52,52);
+    outline: none;
+    width: 100%;
+    height: 14rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.typeInput:focus{
+    border-color: black;
+}
+.type-display{
+/*    font-family: "Libre Baskerville", serif;*/
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.correct{
+    color: green;
+    text-decoration: underline;
+}
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}

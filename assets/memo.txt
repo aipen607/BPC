@@ -1,0 +1,12 @@
+    function testes(){
+        let cart_list = JSON.parse(localStorage.getItem('items'));
+	//JSONファイルを変換した配列をcart_listという名前に格納
+
+        for(let item of cart_list){
+            save_items.push(item);
+        }
+	//for文でcart_list配列から1つずつ取り出し、save_itemsの中にpushで再配置していく
+    }
+
+    testes();
+	//ページが読み込まれた瞬間testes関数を実行する
