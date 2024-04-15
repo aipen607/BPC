@@ -544,7 +544,7 @@ html{
     }
     @keyframes width-color-change{
     from{width: 0; color: #f5f5f7;}
-    50%{width: 340px; color: #f5f5f7;}
+    50%{width: 350px; color: #f5f5f7;}
     55%{color: #f5f5f7;}
     75%{color: #00f2ff;}
     90%{color: #00f2ff; text-shadow: none;}
