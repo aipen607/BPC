@@ -15,9 +15,14 @@ let letterNumber = 0;
 let totalLetterNumber = 0;
 let questionNumber = 0;
 
+// 更新直後はスタートボタンを押さないとテキストエリアに入力できないようにする
+if(stopBtn.classList.contains('hidden')){
+    typeInput.disabled = true;
+}
 
 startBtn.addEventListener('click', () => {
     typeInput.focus();
+    typeInput.disabled = false;
     startBtn.classList.add('hidden');
     stopBtn.classList.remove('hidden');
     stopBtn.classList.remove('restart');
